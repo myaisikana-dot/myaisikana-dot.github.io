@@ -5,108 +5,171 @@
     <title>Mo'e Yaisikana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts for modern style -->
-    <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             background: linear-gradient(120deg, #e0f7fa 30%, #ffe0b2 100%);
             font-family: 'Inter', Arial, sans-serif;
+            color: #333;
+            padding: 20px;
         }
         .card {
-            max-width: 430px;
-            margin: 48px auto;
+            max-width: 650px;
+            margin: 20px auto;
             background: #fff;
             border-radius: 18px;
             box-shadow: 0 4px 32px rgba(44,87,116,0.11);
-            padding: 38px 26px 28px 26px;
+            padding: 40px;
+        }
+        .header-section {
             text-align: center;
         }
         .profile-photo {
-            width: 122px;
-            height: 122px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
-            object-position: center 25%; /* adjust if head is cut off */
-            margin-top: 10px;
-            margin-bottom: 18px;
+            object-position: center 25%;
+            margin-bottom: 16px;
             border: 3px solid #e0f7fa;
         }
         h1 {
             font-size: 2em;
             font-weight: 600;
             margin: 0;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
         .title {
             font-size: 1.15em;
             color: #347474;
             margin-top: 8px;
+            font-weight: 500;
         }
         .institution {
             font-size: 1em;
             color: #666;
-            margin-bottom: 6px;
+            margin-top: 4px;
         }
         .email {
-            margin: 10px 0 15px 0;
+            display: inline-block;
+            margin: 12px 0 20px 0;
             color: #2196f3;
             font-weight: 500;
-            font-size: 0.99em;
             text-decoration: none;
+        }
+        .email:hover {
+            text-decoration: underline;
         }
         .intro {
             background: #e0f7fa38;
-            padding: 14px 14px 16px 14px;
+            padding: 20px;
             border-radius: 12px;
             font-size: 1.05em;
-            margin-bottom: 16px;
-            margin-top: 18px;
+            margin-bottom: 30px;
             color: #3a3a3a;
+            line-height: 1.5;
+            text-align: center;
         }
         .section-title {
-            font-size: 1.06em;
+            font-size: 1.15em;
             font-weight: 600;
             color: #ef6c00;
-            margin-top: 22px;
-            margin-bottom: 6px;
-            letter-spacing: 0.5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #fff3e0;
+            padding-bottom: 8px;
         }
-        ul {
+        .clean-list {
             padding: 0;
-            margin: 0 0 12px 0;
+            margin: 0;
             list-style: none;
         }
-        li { margin-bottom: 5px; }
-        a { color: #2196f3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .clean-list li {
+            margin-bottom: 16px;
+            font-size: 0.95em;
+            line-height: 1.5;
+            color: #444;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .year-badge {
+            display: inline-block;
+            font-weight: 600;
+            color: #347474;
+            margin-right: 8px;
+            min-width: 45px;
+        }
+        a.doi-link {
+            color: #2196f3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a.doi-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="card">
-        <img src="IMG_19211.jpg" alt="Mo’e Yaisikana photo" class="profile-photo">
-        <h1>Mo’e Yaisikana, MSW</h1>
-        <div class="title">PhD Student</div>
-        <div class="institution">UC Berkeley School of Social Welfare</div>
-        <a class="email" href="mailto:yaisikana@berkeley.edu">yaisikana@berkeley.edu</a>
-        <div class="section-title">Research Interests</div>
-        <ul>
-            <li>Aging Policy</li>
-            <li>Long-Term Care</li>
-            <li>Democratic Welfare State</li>
-            <li>Science &amp; Technology Studies (STS)</li>
-        </ul>
-        <div class="intro">
-            Hi! I'm Mo'e Yaisikana, a doctoral student at UC Berkeley Social Welfare. I study how democratic politics and civil engagement influence the public Long-Term Care service provision system around the world.
+        
+        <!-- Header Section -->
+        <div class="header-section">
+            <img src="IMG_19211.jpg" alt="Mo’e Yaisikana" class="profile-photo">
+            <h1>Mo’e Yaisikana</h1>
+            <div class="title">Doctoral Candidate</div>
+            <div class="institution">UC Berkeley Social Welfare</div>
+            <a class="email" href="mailto:yaisikana@berkeley.edu">yaisikana@berkeley.edu</a>
         </div>
-        <div class="section-title">Selected Publications</div>
-        <ul>
+
+        <!-- Brief Intro -->
+        <div class="intro">
+            Hi! I'm Mo'e Yaisikana, a doctoral candidate at UC Berkeley Social Welfare. I study how democracy and governance influence the public Long-Term Care service provision system around the world.
+        </div>
+
+        <!-- Publications -->
+        <div class="section-title">Publications</div>
+        <ul class="clean-list">
             <li>
-                Perone, A. K., Urrutia-Pujana, L., Zhou, L., Yaisikana, M., &amp; Mendez Campos, B. (2025). 
-                <i>The equitable aging in health conceptual framework...</i> 
-                <a href="https://doi.org/10.3389/fpubh.2025.1426015" target="_blank">[DOI]</a>
+                <span class="highlight">Yaisikana, M.</span> (2026). A decolonizing examination of long-term care policy for Indigenous Taiwanese: experience of adult foster care in Indigenous villages. <em>Ageing and Society, 46</em>, e62. 
+                <a class="doi-link" href="https://doi.org/10.1017/S0144686X26100841" target="_blank">[DOI]</a>
             </li>
-            <!-- Add more publications here as needed -->
+            <li>
+                Perone, A. K., Urrutia-Pujana, L., Zhou, L., <span class="highlight">Yaisikana, M.</span>, & Mendez Campos, B. (2025). The equitable aging in health conceptual framework: International interventions infusing power and justice to address social isolation and loneliness among older adults. <em>Frontiers in Public Health, 13</em>. 
+                <a class="doi-link" href="https://doi.org/10.3389/fpubh.2025.1426015" target="_blank">[DOI]</a>
+            </li>
+            <li>
+                <span class="highlight">Yaisikana, M.</span> (2023). Conflict Between Two Discourses on Care Safety: A Dispute on Space Configuration for Care in Indigenous Village (in Mandarin). <em>In Ethnologia (51)</em>.
+            </li>
+            <li>
+                <span class="highlight">Yaisikana, M.</span> (2022). Culture & Health Stations as the Guardians of Cultural Safety (in Mandarin). <em>In Aboriginal Education World (104)</em>, 28-33.
+            </li>
+            <li>
+                <span class="highlight">Yaisikana, M.</span> (2019). Strengths and Obstacles of Adult Foster Care in Indigenous Village - A case study from Nantou County (in Mandarin). <em>In Soochow Journal of Social Work (37)</em>, 143-157.
+            </li>
         </ul>
+
+        <!-- Awards & Honors -->
+        <div class="section-title">Awards & Honors</div>
+        <ul class="clean-list">
+            <li><span class="year-badge">2026</span> The John L. Simpson ABD Research Fellowship in International & Area Studies, UC Berkeley</li>
+            <li><span class="year-badge">2025</span> AGESW Gerontological Social Work Pre-Dissertation Fellow, USA</li>
+            <li><span class="year-badge">2024</span> Dr. and Mrs. C.Y. Soong Fellowship 2024-2025, UC Berkeley</li>
+            <li><span class="year-badge">2023</span> UC-Taiwan Fellowship, UC Berkeley</li>
+            <li><span class="year-badge">2022</span> Dialogue Impact Award, CP Yen Foundation, Taipei, Taiwan</li>
+            <li><span class="year-badge">2022</span> Critical and Practical Thesis Award – Master Thesis, Association for Taiwan Social Studies</li>
+            <li><span class="year-badge">2022</span> Indigenous Academic Outstanding Specialist Award, Council of Indigenous, Taiwan</li>
+            <li><span class="year-badge">2020</span> Master Thesis on Indigenous Issues Fellowship, Millet Foundation, Hualien, Taiwan</li>
+        </ul>
+
+        <!-- Certification -->
+        <div class="section-title">Certification</div>
+        <ul class="clean-list">
+            <li><span class="year-badge">2026</span> Graduate Certificate in Applied Data Science, UC Berkeley, School of Information</li>
+        </ul>
+
     </div>
 </body>
 </html>

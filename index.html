@@ -15,61 +15,71 @@
             padding: 20px;
         }
         .card {
-            max-width: 650px;
+            max-width: 680px;
             margin: 20px auto;
             background: #fff;
             border-radius: 18px;
             box-shadow: 0 4px 32px rgba(44,87,116,0.11);
             padding: 40px;
         }
+        
+        /* Flexbox Header Section: Photo Left, Info Right */
         .header-section {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            margin-bottom: 24px;
         }
         .profile-photo {
-            width: 130px;
-            height: 130px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
             object-position: center 25%;
-            margin-bottom: 16px;
             border: 3px solid #e0f7fa;
+            flex-shrink: 0;
         }
-        h1 {
-            font-size: 2em;
+        .profile-info {
+            text-align: left;
+        }
+        .profile-info h1 {
+            font-size: 1.8em;
             font-weight: 600;
-            margin: 0;
-            letter-spacing: 0.5px;
+            margin: 0 0 6px 0;
+            color: #111;
+            letter-spacing: 0.3px;
         }
-        .title {
-            font-size: 1.15em;
+        .profile-info .title {
+            font-size: 1.05em;
             color: #347474;
-            margin-top: 8px;
-            font-weight: 500;
+            font-weight: 600;
+            margin-bottom: 4px;
         }
-        .institution {
-            font-size: 1em;
-            color: #666;
-            margin-top: 4px;
+        .profile-info .affiliation {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.4;
         }
-        .email {
+        .profile-info .email {
             display: inline-block;
-            margin: 12px 0 20px 0;
+            margin-top: 8px;
             color: #2196f3;
             font-weight: 500;
             text-decoration: none;
+            font-size: 0.95em;
         }
-        .email:hover {
+        .profile-info .email:hover {
             text-decoration: underline;
         }
+
         .intro {
             background: #e0f7fa38;
             padding: 20px;
             border-radius: 12px;
-            font-size: 1.05em;
+            font-size: 1.02em;
             margin-bottom: 30px;
             color: #3a3a3a;
             line-height: 1.5;
-            text-align: center;
         }
         .section-title {
             font-size: 1.15em;
@@ -110,18 +120,35 @@
         a.doi-link:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Layout for Mobile Devices */
+        @media (max-width: 580px) {
+            .header-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-info {
+                text-align: center;
+            }
+            .card {
+                padding: 24px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="card">
         
-        <!-- Header Section -->
+        <!-- Header Section: Image Left, Info Right -->
         <div class="header-section">
             <img src="IMG_19211.jpg" alt="Mo’e Yaisikana" class="profile-photo">
-            <h1>Mo’e Yaisikana</h1>
-            <div class="title">Doctoral Candidate</div>
-            <div class="institution">UC Berkeley Social Welfare</div>
-            <a class="email" href="mailto:yaisikana@berkeley.edu">yaisikana@berkeley.edu</a>
+            <div class="profile-info">
+                <h1>Mo’e Yaisikana</h1>
+                <div class="title">Graduate Student Researcher</div>
+                <div class="affiliation">UC Berkeley, School of Social Welfare</div>
+                <div class="affiliation">Center for the Advanced Study of Aging Services</div>
+                <a class="email" href="mailto:yaisikana@berkeley.edu">yaisikana@berkeley.edu</a>
+            </div>
         </div>
 
         <!-- Brief Intro -->

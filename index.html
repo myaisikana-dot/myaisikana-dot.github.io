@@ -131,16 +131,26 @@
             font-size: 0.98em;
             color: #333;
         }
+        
+        /* Flexbox List for aligned Years */
+        .year-list li {
+            display: flex;
+            align-items: flex-start;
+        }
+        .year-badge {
+            font-weight: 600;
+            color: #2f5b40;
+            min-width: 55px; /* Keeps the year column fixed width */
+            flex-shrink: 0;
+            margin-right: 15px;
+        }
+        .year-list-text {
+            flex-grow: 1;
+        }
+
         .highlight {
             font-weight: 600;
             color: #111;
-        }
-        .year-badge {
-            display: inline-block;
-            font-weight: 600;
-            color: #2f5b40;
-            margin-right: 12px;
-            min-width: 45px;
         }
         a.doi-link {
             color: #2f5b40;
@@ -160,8 +170,9 @@
         .edu-years {
             font-weight: 600;
             color: #2f5b40;
-            min-width: 100px;
+            min-width: 105px;
             flex-shrink: 0;
+            margin-right: 15px;
         }
         .edu-details {
             flex-grow: 1;
@@ -207,6 +218,12 @@
                 flex-direction: column;
             }
             .edu-years {
+                margin-bottom: 4px;
+            }
+            .year-list li {
+                flex-direction: column;
+            }
+            .year-badge {
                 margin-bottom: 4px;
             }
         }
@@ -308,22 +325,52 @@
 
             <!-- Awards & Honors -->
             <h2 id="awards" class="section-header">Awards & Honors</h2>
-            <ul class="clean-list">
-                <li><span class="year-badge">2026</span> Taiwanese Overseas Pioneers (TOP) Doctoral Candidate Grants, National Science and Technology Council of Taiwan, Taiwan</li>
-                <li><span class="year-badge">2026</span> The John L. Simpson ABD Research Fellowship in International & Area Studies, UC Berkeley</li>
-                <li><span class="year-badge">2025</span> AGESW Gerontological Social Work Pre-Dissertation Fellow, USA</li>
-                <li><span class="year-badge">2024</span> Dr. and Mrs. C.Y. Soong Fellowship 2024-2025, UC Berkeley</li>
-                <li><span class="year-badge">2023</span> UC-Taiwan Fellowship, UC Berkeley</li>
-                <li><span class="year-badge">2022</span> Dialogue Impact Award, CP Yen Foundation, Taipei, Taiwan</li>
-                <li><span class="year-badge">2022</span> Critical and Practical Thesis Award – Master Thesis, Association for Taiwan Social Studies</li>
-                <li><span class="year-badge">2022</span> Indigenous Academic Outstanding Specialist Award, Council of Indigenous, Taiwan</li>
-                <li><span class="year-badge">2020</span> Master Thesis on Indigenous Issues Fellowship, Millet Foundation, Hualien, Taiwan</li>
+            <ul class="clean-list year-list">
+                <li>
+                    <div class="year-badge">2026</div>
+                    <div class="year-list-text">Taiwanese Overseas Pioneers (TOP) Doctoral Candidate Grants, National Science and Technology Council of Taiwan, Taiwan</div>
+                </li>
+                <li>
+                    <div class="year-badge">2026</div>
+                    <div class="year-list-text">The John L. Simpson ABD Research Fellowship in International & Area Studies, UC Berkeley</div>
+                </li>
+                <li>
+                    <div class="year-badge">2025</div>
+                    <div class="year-list-text">AGESW Gerontological Social Work Pre-Dissertation Fellow, USA</div>
+                </li>
+                <li>
+                    <div class="year-badge">2024</div>
+                    <div class="year-list-text">Dr. and Mrs. C.Y. Soong Fellowship 2024-2025, UC Berkeley</div>
+                </li>
+                <li>
+                    <div class="year-badge">2023</div>
+                    <div class="year-list-text">UC-Taiwan Fellowship, UC Berkeley</div>
+                </li>
+                <li>
+                    <div class="year-badge">2022</div>
+                    <div class="year-list-text">Dialogue Impact Award, CP Yen Foundation, Taipei, Taiwan</div>
+                </li>
+                <li>
+                    <div class="year-badge">2022</div>
+                    <div class="year-list-text">Critical and Practical Thesis Award – Master Thesis, Association for Taiwan Social Studies</div>
+                </li>
+                <li>
+                    <div class="year-badge">2022</div>
+                    <div class="year-list-text">Indigenous Academic Outstanding Specialist Award, Council of Indigenous, Taiwan</div>
+                </li>
+                <li>
+                    <div class="year-badge">2020</div>
+                    <div class="year-list-text">Master Thesis on Indigenous Issues Fellowship, Millet Foundation, Hualien, Taiwan</div>
+                </li>
             </ul>
 
             <!-- Certification -->
             <h2 class="section-header">Certification</h2>
-            <ul class="clean-list">
-                <li><span class="year-badge">2026</span> Graduate Certificate in Applied Data Science, UC Berkeley, School of Information</li>
+            <ul class="clean-list year-list">
+                <li>
+                    <div class="year-badge">2026</div>
+                    <div class="year-list-text">Graduate Certificate in Applied Data Science, UC Berkeley, School of Information</div>
+                </li>
             </ul>
         </div>
         

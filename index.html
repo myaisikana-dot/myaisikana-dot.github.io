@@ -209,6 +209,19 @@
             border: 1px solid #d4eadc;
         }
 
+        /* YouTube Media Grid */
+        .media-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .media-grid iframe {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 100%;
+        }
+
         /* Mobile Responsiveness */
         @media (max-width: 850px) {
             .container {
@@ -242,6 +255,13 @@
             }
             .year-badge {
                 margin-bottom: 4px;
+            }
+            .media-grid {
+                flex-direction: column;
+            }
+            .media-grid iframe {
+                width: 100%;
+                height: 220px; /* Adjust height for mobile width */
             }
         }
     </style>
@@ -280,6 +300,10 @@
             <div class="sidebar-item">
                 <span class="sidebar-icon">✉️</span> 
                 <span><a href="mailto:yaisikana@berkeley.edu">yaisikana@berkeley.edu</a></span>
+            </div>
+            <div class="sidebar-item">
+                <span class="sidebar-icon">🔗</span> 
+                <span><a href="https://www.linkedin.com/in/mo-e-yaisikana-075723258" target="_blank">LinkedIn</a></span>
             </div>
         </div>
 
@@ -415,16 +439,13 @@
 
             <!-- Selected Media Appearances -->
             <h2 id="media" class="section-header">Selected Media Appearances</h2>
-            <ul class="clean-list">
-                <li>
-                    <span class="sidebar-icon">▶️</span> 
-                    <a class="doi-link" href="https://youtu.be/0KQztbrkZh8?si=HC0kiik8pujrDP0V" target="_blank">Watch Interview / Presentation on YouTube (Link 1)</a>
-                </li>
-                <li>
-                    <span class="sidebar-icon">▶️</span> 
-                    <a class="doi-link" href="https://youtu.be/JesOqv9Aj4A?si=BXxrz4XO-QVnhtuN" target="_blank">Watch Interview / Presentation on YouTube (Link 2)</a>
-                </li>
-            </ul>
+            <div class="media-grid">
+                <!-- Video 1 -->
+                <iframe width="350" height="197" src="https://www.youtube.com/embed/0KQztbrkZh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <!-- Video 2 -->
+                <iframe width="350" height="197" src="https://www.youtube.com/embed/JesOqv9Aj4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
         
     </div>
